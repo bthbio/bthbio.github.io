@@ -71,6 +71,38 @@
 			font-weight: bold;
 		}
 
+		ul {
+			list-style-type: "-  ";
+			padding-left: 12px;
+		}
+
+		form ul {
+			list-style-type: none;
+		}
+
+		textarea {
+			width: 18vw;
+			height: 5vw;
+			border: 1px solid grey;
+			padding: 3px;
+		}
+
+		input {
+			border: 1px solid grey;
+			padding: 3px;
+		}
+
+		footer {
+			display: block;
+			position: relative;
+			padding: 1em;
+			text-align: center;
+			color: #ffffff;
+			background-color: #333333;
+			scroll-snap-align: start;
+			margin: 55vh -5vw 0 0;
+		}
+
 		.scroll-container {
 			position: relative;
 			overflow-x: hidden;
@@ -157,8 +189,38 @@
 		</div>
 		<div class="page">
 			<h1>Contact Us</h1>
-			<p><!----></p>
+			<p>
+				<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1eqcMqzQKbkSa6gS5yblcAUQWGYuWjewSFT23LepmYlo/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+				  <ul>
+					<li>
+					  <label for="entry.1546413298">First name:</label><br>
+					  <input type="text" name="entry.1546413298" id="entry.1546413298">
+					</li>
+					<li>
+					  <label for="entry.363095233">Last name:</label><br>
+					  <input type="text" name="entry.363095233" id="entry.363095233">
+					</li>
+					<li>
+					  <label for="">Email Address:</label><br>
+					  <input type="email" name="entry.547631510" id="entry.547631510">
+					</li>
+					<li>
+					  <label for="">Phone number:</label><br>
+					  <input type="tel" name="entry.1318388493" id="entry.1318388493">
+					</li>
+					<li>
+					  <label for="">Message:</label><br>
+					  <textarea name="entry.624399278" id="entry.624399278"></textarea>
+					</li>
+					<li>
+					  <input type="submit" value="Submit">
+					</li>
+				  </ul>
+				</form>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+			</p>
 		</div>
+		<footer>Copyright © BTH (Beyond The Horizon) - bth.bio</footer>
 	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
